@@ -1,12 +1,20 @@
 <form [formGroup]="form">
-<!--  <prizm-input-layout label="Label">-->
+  <div>
+    <prizm-input-layout label="Label">
+      <prizm-input-layout-month-range
+        formControlName="period"
+      ></prizm-input-layout-month-range>
+    </prizm-input-layout>
+  </div>
+  <br>
+  <div>
     <prizm-input-month-range
-      formControlName="period"
+      formControlName="period2"
     ></prizm-input-month-range>
-<!--  </prizm-input-layout>-->
+  </div>
 
   <div>
-    <input type="text" formControlName="period">
+    <pre style="background: lightgray; padding: 10px;">{{form.getRawValue() | json}}</pre>
   </div>
 </form>
 
