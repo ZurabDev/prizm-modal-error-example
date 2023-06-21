@@ -12,6 +12,9 @@ export class CalendarComponent implements OnInit {
     period: new FormControl(
       new PrizmMonthRange(new PrizmMonth(2022, 1), new PrizmMonth(2022, 3))
     ),
+    period2: new FormControl(
+      new PrizmMonthRange(new PrizmMonth(2022, 1), new PrizmMonth(2022, 3))
+    ),
   });
   public  period = new FormControl(
   new PrizmMonthRange(new PrizmMonth(2022, 1), new PrizmMonth(2022, 3))
